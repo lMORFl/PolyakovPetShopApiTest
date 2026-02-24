@@ -7,5 +7,25 @@ repositories {
 }
 
 dependencies {
+    // Source: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    // Source: https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
+    // Source: https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    testImplementation 'io.rest-assured:rest-assured:5.3.2'
+
+    // Source: https://mvnrepository.com/artifact/io.qameta.allure/allure-junit5
+    testImplementation 'io.qameta.allure:allure-junit5:2.24.0'
+    // Source: https://mvnrepository.com/artifact/io.qameta.allure/allure-rest-assured
+    testImplementation 'io.qameta.allure:allure-rest-assured:2.24.0'
+
+    // Source: https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+    testImplementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
+    // Source: https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
+    testImplementation 'com.fasterxml.jackson.core:jackson-annotations:2.15.2'
+}
+
+test {
+    useJUnitPlatform()
 }
