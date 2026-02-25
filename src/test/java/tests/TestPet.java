@@ -109,14 +109,15 @@ public class TestPet {
     @CsvSource({
             "200, Spinogryz, available",
             "250, Dinozavr Rex, pending",
-            "232, KOtya, sold"
+            "232, KOtya, sold",
+            "234, None, returned"
     })
     @Feature("Pet")
     @Severity(SeverityLevel.CRITICAL)
     @Owner("Polyakov Semyon")
 
-
     public void testPostNewPet(int id, String name, String status) {
+
         Pet pet = new Pet();
         pet.setId(id);
         pet.setName(name);
