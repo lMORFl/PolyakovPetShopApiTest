@@ -37,4 +37,5 @@ public class TestPet {
                 assertEquals("Pet deleted", responseBody,
                 "Текст ответа не совпал с ожидаемым. Получен: " + responseBody));
     }
+
 }
